@@ -1,0 +1,31 @@
+<div>
+    Zoom:
+    <input
+      (change)="notify.emit($event)"
+      name="zoom"
+      type="number"
+      [value]="zoom"
+    />
+  </div>
+  <div>
+    Latitud:
+    <input
+      (change)="notify.emit($event)"
+      name="lat"
+      type="number"
+      [value]="lat"
+    />
+  </div>
+  <div>
+    Longitud:
+    <input
+      (change)="notify.emit($event)"
+      name="lng"
+      type="number"
+      [value]="lng"
+    />
+  </div>
+  
+
+  
+<!-- The mapposition component has three input fields: zoom, latitude and longitude. The new code introduces a change event listener that redispatches events for each input field to the parent component. The parent component will then update the map position accordingly. -->
